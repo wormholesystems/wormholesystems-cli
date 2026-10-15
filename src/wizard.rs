@@ -14,7 +14,7 @@ use crate::plan::{self, Answers, Mode, Step, StepGroup};
 use crate::state::ResumeState;
 use crate::{docker, envfile, netinfo, secrets};
 
-const REPO_URL: &str = "https://github.com/WormholeSystems/wormholesystems-containers.git";
+const REPO_URL: &str = "https://github.com/wormholesystems/wormholesystems-containers.git";
 
 pub fn run(dir: Option<PathBuf>) -> Result<()> {
     println!(

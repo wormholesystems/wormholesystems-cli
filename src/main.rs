@@ -97,11 +97,11 @@ fn print_about() {
     for (label, url) in [
         (
             "CLI repo",
-            "https://github.com/WormholeSystems/wormholesystems-cli",
+            "https://github.com/wormholesystems/wormholesystems-cli",
         ),
         (
             "Stack repo",
-            "https://github.com/WormholeSystems/wormholesystems-containers",
+            "https://github.com/wormholesystems/wormholesystems-containers",
         ),
         ("Installer", "https://install.wormhole.systems"),
         ("App", "https://wormhole.systems"),

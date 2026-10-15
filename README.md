@@ -1,12 +1,12 @@
 # wsctl
 
-[![CI](https://github.com/WormholeSystems/wormholesystems-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/WormholeSystems/wormholesystems-cli/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/WormholeSystems/wormholesystems-cli)](https://github.com/WormholeSystems/wormholesystems-cli/releases/latest)
-[![License](https://img.shields.io/github/license/WormholeSystems/wormholesystems-cli)](LICENSE)
-[![Stack](https://img.shields.io/badge/stack-wormholesystems--containers-blue)](https://github.com/WormholeSystems/wormholesystems-containers)
-[![App](https://img.shields.io/badge/app-WormholeSystems-blue)](https://github.com/WormholeSystems/wormholesystems-legacy)
+[![CI](https://github.com/wormholesystems/wormholesystems-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/wormholesystems/wormholesystems-cli/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/wormholesystems/wormholesystems-cli)](https://github.com/wormholesystems/wormholesystems-cli/releases/latest)
+[![License](https://img.shields.io/github/license/wormholesystems/wormholesystems-cli)](LICENSE)
+[![Stack](https://img.shields.io/badge/stack-wormholesystems--containers-blue)](https://github.com/wormholesystems/wormholesystems-containers)
+[![App](https://img.shields.io/badge/app-WormholeSystems-blue)](https://github.com/wormholesystems/wormholesystems-legacy)
 
-One tool to set up and manage a self-hosted [Wormhole Systems](https://wormhole.systems) instance. It automates the entire [container stack](https://github.com/WormholeSystems/wormholesystems-containers) setup — cloning, configuration, secrets, docker build, database initialization — through an interactive wizard, and keeps the instance's EVE data updated afterwards.
+One tool to set up and manage a self-hosted [Wormhole Systems](https://wormhole.systems) instance. It automates the entire [container stack](https://github.com/wormholesystems/wormholesystems-containers) setup — cloning, configuration, secrets, docker build, database initialization — through an interactive wizard, and keeps the instance's EVE data updated afterwards.
 
 ## Install
 
@@ -14,7 +14,7 @@ One tool to set up and manage a self-hosted [Wormhole Systems](https://wormhole.
 curl --proto '=https' --tlsv1.2 -sSf https://install.wormhole.systems | sh
 ```
 
-Detects your platform, installs the latest `wsctl` release binary and offers to start the setup right away. Pin a version with `WSCTL_VERSION=v0.5.0 curl ... | sh`, or grab a binary directly from the [releases](https://github.com/WormholeSystems/wormholesystems-cli/releases).
+Detects your platform, installs the latest `wsctl` release binary and offers to start the setup right away. Pin a version with `WSCTL_VERSION=v0.5.0 curl ... | sh`, or grab a binary directly from the [releases](https://github.com/wormholesystems/wormholesystems-cli/releases).
 
 **Requirements:** git, Docker with Compose v2.24+, and for production a domain pointing at your server with ports 80/443 open. You will also need an [EVE developer application](https://developers.eveonline.com/) — the wizard tells you exactly how to configure it (callback URL and scopes) when you get there.
 
@@ -63,8 +63,8 @@ wsctl about    # version and project links
 
 | Repository | What it is |
 |---|---|
-| [wormholesystems-containers](https://github.com/WormholeSystems/wormholesystems-containers) | The docker stack this tool sets up (Traefik, frankenPHP, MySQL, Redis, Reverb) |
-| [wormholesystems-legacy](https://github.com/WormholeSystems/wormholesystems-legacy) | The Laravel application itself |
+| [wormholesystems-containers](https://github.com/wormholesystems/wormholesystems-containers) | The docker stack this tool sets up (Traefik, frankenPHP, MySQL, Redis, Reverb) |
+| [wormholesystems-legacy](https://github.com/wormholesystems/wormholesystems-legacy) | The Laravel application itself |
 
 ## Development
 

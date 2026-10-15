@@ -8,7 +8,7 @@
 # Rust toolchain needed on the server.
 set -eu
 
-REPO="WormholeSystems/wormholesystems-cli"
+REPO="wormholesystems/wormholesystems-cli"
 DIR="$(cd "$(dirname "$0")" && pwd)"
 VERSION="$(cat "$DIR/.wsctl-version" 2>/dev/null || echo latest)"
 

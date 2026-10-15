@@ -4,7 +4,7 @@
 # Pin a version with WSCTL_VERSION=v0.1.0.
 set -eu
 
-REPO="WormholeSystems/wormholesystems-cli"
+REPO="wormholesystems/wormholesystems-cli"
 VERSION="${WSCTL_VERSION:-latest}"
 
 case "$(uname -s)-$(uname -m)" in
