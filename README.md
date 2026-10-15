@@ -11,7 +11,7 @@ One tool to set up and manage a self-hosted [Wormhole Systems](https://wormhole.
 ## Install
 
 ```bash
-curl --proto '=https' --tlsv1.2 -sSf https://install.wormhole.systems | sh
+curl --proto '=https' --tlsv1.2 -sSf https://install-legacy.wormhole.systems | sh
 ```
 
 Detects your platform, installs the latest `wsctl` release binary and offers to start the setup right away. Pin a version with `WSCTL_VERSION=v0.5.0 curl ... | sh`, or grab a binary directly from the [releases](https://github.com/wormholesystems/wormholesystems-cli/releases).
@@ -96,7 +96,7 @@ GitHub Actions (`.github/workflows/`):
 
 - **ci.yml** — `cargo fmt --check`, `cargo clippy -D warnings`, `cargo test` on every push/PR, plus the weekly upstream-HEAD drift run
 - **release.yml** — tagging `v*` builds `wsctl` for Linux/macOS (x86_64 + aarch64) and attaches the binaries to a GitHub Release
-- **pages.yml** — publishes `install.sh` to GitHub Pages as `install.wormhole.systems` (root document *is* the script, so `curl | sh` works on the bare domain)
+- **pages.yml** — publishes `install.sh` to GitHub Pages as `install-legacy.wormhole.systems` (root document *is* the script, so `curl | sh` works on the bare domain)
 
 Binaries are never committed to git. The containers repo can additionally ship `dist/setup.sh` as `./setup.sh` with a `.wsctl-version` pin, so `git clone && ./setup.sh` works without curl.
 

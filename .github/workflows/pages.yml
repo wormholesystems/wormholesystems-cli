@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # The root document IS the script, so `curl https://install.wormhole.systems | sh` works.
+      # The root document IS the script, so `curl https://install-legacy.wormhole.systems | sh` works.
       - run: |
           mkdir _site
           cp install.sh _site/index.html

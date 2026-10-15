@@ -103,7 +103,7 @@ fn print_about() {
             "Stack repo",
             "https://github.com/wormholesystems/wormholesystems-containers",
         ),
-        ("Installer", "https://install.wormhole.systems"),
+        ("Installer", "https://install-legacy.wormhole.systems"),
         ("App", "https://wormhole.systems"),
     ] {
         println!("  {:<11} {}", label, style(url).cyan());
